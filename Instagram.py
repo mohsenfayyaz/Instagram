@@ -8,7 +8,7 @@ driver.get('https://www.instagram.com/danialves/')
 cookies = pickle.load(open("cookies.pkl", "rb"))
 for cookie in cookies:
     driver.add_cookie(cookie)
-driver.get('https://www.instagram.com/leomessi/following/')
+driver.get('https://www.instagram.com/leomessi/')
 dom = driver.find_element_by_xpath('//*')
 
 following_button = driver.find_element_by_partial_link_text("following")
